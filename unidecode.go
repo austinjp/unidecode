@@ -9,7 +9,7 @@ import (
 
 // Version returns version string
 func Version() string {
-	return "0.2.1"
+	return "0.2.2"
 }
 
 // Unidecode transliterates Unicode text into plain 7-bit ASCII.
