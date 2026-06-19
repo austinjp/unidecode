@@ -3,38 +3,25 @@ package main
 import (
 	"flag"
 	"fmt"
-	"io"
 	"os"
-	"strings"
 
 	"github.com/austinjp/unidecode"
-	"github.com/mattn/go-isatty"
 )
 
 func main() {
 	version := flag.Bool("V", false, "Output version info")
+	input := flag.String("text", "", "Text to transliterate")
+
 	flag.Parse()
 	if *version {
-		v := unidecode.Version()
-		fmt.Printf("unidecode %s\n", v)
+		fmt.Printf("unidecode %s\n", unidecode.Version())
 		os.Exit(0)
 	}
 
-	textSlice := flag.Args()
-	stdin := []byte{}
-	if !isatty.IsTerminal(os.Stdin.Fd()) {
-		stdin, _ = io.ReadAll(os.Stdin)
-	}
-	if len(stdin) > 0 {
-		textSlice = append(textSlice, string(stdin))
-	}
-
-	if len(textSlice) == 0 {
+	if *input == "" {
 		fmt.Println("Usage: unidecode STRING")
 		os.Exit(1)
 	}
 
-	s := strings.Join(textSlice, " ")
-	ret := unidecode.Unidecode(s)
-	fmt.Println(ret)
+	fmt.Println(unidecode.Unidecode(*input))
 }
