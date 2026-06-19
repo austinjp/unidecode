@@ -1,7 +1,7 @@
 package table
 
 // Tables is data map
-var Tables = map[rune][]string{}
+var Tables [0x1f7][256]string // covers sections up to 0x1f6
 
 func init() {
 	Tables[0x000] = x000

@@ -1,3 +1,3 @@
-module github.com/mozillazg/go-unidecode
+module github.com/austinjp/unidecode
 
-go 1.12
+go 1.26

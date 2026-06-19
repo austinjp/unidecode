@@ -1,6 +1,6 @@
 package table
 
-var x0fb = []string{
+var x0fb = [256]string{
 	"ff",  // 0x00
 	"fi",  // 0x01
 	"fl",  // 0x02

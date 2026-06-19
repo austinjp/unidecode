@@ -1,6 +1,6 @@
 package table
 
-var x1f1 = []string{
+var x1f1 = [256]string{
 	"0.",          // 0x00
 	"0,",          // 0x01
 	"1,",          // 0x02

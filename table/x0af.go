@@ -1,6 +1,6 @@
 package table
 
-var x0af = []string{
+var x0af = [256]string{
 	"ggyeols", // 0x00
 	"ggyeolt", // 0x01
 	"ggyeolp", // 0x02

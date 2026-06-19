@@ -1,6 +1,6 @@
 package table
 
-var x07b = []string{
+var x07b = [256]string{
 	"Mang ",   // 0x00
 	"Zhu ",    // 0x01
 	"Utsubo ", // 0x02

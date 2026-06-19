@@ -1,6 +1,6 @@
 package table
 
-var x06f = []string{
+var x06f = [256]string{
 	"Qing ",   // 0x00
 	"Yu ",     // 0x01
 	"Piao ",   // 0x02

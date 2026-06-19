@@ -1,6 +1,6 @@
 package table
 
-var x0be = []string{
+var x0be = [256]string{
 	"byum",    // 0x00
 	"byub",    // 0x01
 	"byubs",   // 0x02

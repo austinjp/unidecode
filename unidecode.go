@@ -2,14 +2,13 @@ package unidecode
 
 import (
 	"strings"
-	"unicode"
 
-	"github.com/mozillazg/go-unidecode/table"
+	"github.com/austinjp/unidecode/table"
 )
 
 // Version return version
 func Version() string {
-	return "0.2.0"
+	return "0.2.1"
 }
 
 // Unidecode implements transliterate Unicode text into plain 7-bit ASCII.
@@ -20,21 +19,25 @@ func Unidecode(s string) string {
 
 func unidecode(s string) string {
 	var ret strings.Builder
-	for _, r := range s {
-		if r < unicode.MaxASCII {
-			ret.WriteRune(r)
+	ret.Grow(len(s)) // most chars map 1:1 or shrink, avoids reallocation
+	for _, c := range s {
+
+		// cast to uint32 to ensure compiler treats shifts as unsigned
+		r := uint32(c)
+
+		if r < 0x80 { // unicode.MaxASCII + 1, includes byte 127 which is DEL
+			ret.WriteByte(byte(r)) // cheaper than WriteRune for known ASCII
 			continue
 		}
 		if r > 0xeffff {
 			continue
 		}
 
-		section := r >> 8   // Chop off the last two hex digits
-		position := r % 256 // Last two hex digits
-		if tb, ok := table.Tables[section]; ok {
-			if len(tb) > int(position) {
-				ret.WriteString(tb[position])
-			}
+		section := r >> 8    // Chop off the last two hex digits
+		position := r & 0xff // Last two hex digits (use mask instead of mod, same result, marginally cheaper)
+
+		if tb := table.Tables[section]; tb[position] != "" {
+			ret.WriteString(tb[position])
 		}
 	}
 	return ret.String()

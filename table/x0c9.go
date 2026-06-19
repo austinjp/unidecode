@@ -1,6 +1,6 @@
 package table
 
-var x0c9 = []string{
+var x0c9 = [256]string{
 	"jun",    // 0x00
 	"junj",   // 0x01
 	"junh",   // 0x02

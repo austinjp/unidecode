@@ -1,6 +1,6 @@
 package table
 
-var x0a3 = []string{
+var x0a3 = [256]string{
 	"nzup",  // 0x00
 	"nzurx", // 0x01
 	"nzur",  // 0x02

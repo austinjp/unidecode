@@ -1,6 +1,6 @@
 package table
 
-var x053 = []string{
+var x053 = [256]string{
 	"Yun ",    // 0x00
 	"Mwun ",   // 0x01
 	"Nay ",    // 0x02

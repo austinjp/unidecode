@@ -1,6 +1,6 @@
 package table
 
-var x0c2 = []string{
+var x0c2 = [256]string{
 	"syon",   // 0x00
 	"syonj",  // 0x01
 	"syonh",  // 0x02

@@ -1,6 +1,6 @@
 package table
 
-var x014 = []string{
+var x014 = [256]string{
 	"",     // 0x00
 	"e",    // 0x01
 	"aai",  // 0x02

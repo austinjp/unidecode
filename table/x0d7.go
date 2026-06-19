@@ -1,6 +1,6 @@
 package table
 
-var x0d7 = []string{
+var x0d7 = [256]string{
 	"hwen",  // 0x00
 	"hwenj", // 0x01
 	"hwenh", // 0x02
@@ -256,4 +256,5 @@ var x0d7 = []string{
 	"",      // 0xfc
 	"",      // 0xfd
 	"",      // 0xfe
+	"",
 }

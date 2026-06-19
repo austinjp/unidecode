@@ -1,6 +1,6 @@
 package table
 
-var x05f = []string{
+var x05f = [256]string{
 	"Kai ",   // 0x00
 	"Bian ",  // 0x01
 	"Yi ",    // 0x02

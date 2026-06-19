@@ -1,6 +1,6 @@
 package table
 
-var x0b0 = []string{
+var x0b0 = [256]string{
 	"ggwem",  // 0x00
 	"ggweb",  // 0x01
 	"ggwebs", // 0x02

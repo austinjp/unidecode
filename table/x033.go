@@ -1,6 +1,6 @@
 package table
 
-var x033 = []string{
+var x033 = [256]string{
 	"apartment", // 0x00
 	"alpha",     // 0x01
 	"ampere",    // 0x02

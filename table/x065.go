@@ -1,6 +1,6 @@
 package table
 
-var x065 = []string{
+var x065 = [256]string{
 	"Pan ",   // 0x00
 	"Yang ",  // 0x01
 	"Lei ",   // 0x02

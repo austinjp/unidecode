@@ -1,6 +1,6 @@
 package table
 
-var x0ba = []string{
+var x0ba = [256]string{
 	"mya",    // 0x00
 	"myag",   // 0x01
 	"myagg",  // 0x02

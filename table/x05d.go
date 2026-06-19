@@ -1,6 +1,6 @@
 package table
 
-var x05d = []string{
+var x05d = [256]string{
 	"Lang ",      // 0x00
 	"Kan ",       // 0x01
 	"Lao ",       // 0x02

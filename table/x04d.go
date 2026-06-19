@@ -1,6 +1,6 @@
 package table
 
-var x04d = []string{
+var x04d = [256]string{
 	"", // 0x00
 	"", // 0x01
 	"", // 0x02
@@ -256,4 +256,5 @@ var x04d = []string{
 	"", // 0xfc
 	"", // 0xfd
 	"", // 0xfe
+	"",
 }

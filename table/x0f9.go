@@ -1,6 +1,6 @@
 package table
 
-var x0f9 = []string{
+var x0f9 = [256]string{
 	"Kay ",   // 0x00
 	"Kayng ", // 0x01
 	"Ke ",    // 0x02

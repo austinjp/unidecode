@@ -1,6 +1,6 @@
 package table
 
-var x08d = []string{
+var x08d = [256]string{
 	"Wei ",   // 0x00
 	"Bai ",   // 0x01
 	"Chen ",  // 0x02

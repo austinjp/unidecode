@@ -1,6 +1,6 @@
 package table
 
-var x0b9 = []string{
+var x0b9 = [256]string{
 	"ruk",    // 0x00
 	"rut",    // 0x01
 	"rup",    // 0x02

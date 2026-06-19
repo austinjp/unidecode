@@ -1,6 +1,6 @@
 package table
 
-var x067 = []string{
+var x067 = [256]string{
 	"Zui ",   // 0x00
 	"Can ",   // 0x01
 	"Xu ",    // 0x02

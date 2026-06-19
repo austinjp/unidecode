@@ -1,6 +1,6 @@
 package table
 
-var x0bb = []string{
+var x0bb = [256]string{
 	"moen",   // 0x00
 	"moenj",  // 0x01
 	"moenh",  // 0x02

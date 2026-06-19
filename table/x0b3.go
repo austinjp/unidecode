@@ -1,6 +1,6 @@
 package table
 
-var x0b3 = []string{
+var x0b3 = [256]string{
 	"dae",    // 0x00
 	"daeg",   // 0x01
 	"daegg",  // 0x02

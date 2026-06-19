@@ -1,6 +1,6 @@
 package table
 
-var x0cc = []string{
+var x0cc = [256]string{
 	"jjyim",  // 0x00
 	"jjyib",  // 0x01
 	"jjyibs", // 0x02

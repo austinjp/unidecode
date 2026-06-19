@@ -1,6 +1,6 @@
 package table
 
-var x013 = []string{
+var x013 = [256]string{
 	"ja",      // 0x00
 	"ju",      // 0x01
 	"ji",      // 0x02
@@ -256,4 +256,5 @@ var x013 = []string{
 	"",        // 0xfc
 	"",        // 0xfd
 	"",        // 0xfe
+	"",
 }

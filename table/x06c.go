@@ -1,6 +1,6 @@
 package table
 
-var x06c = []string{
+var x06c = [256]string{
 	"Lu ",        // 0x00
 	"Mu ",        // 0x01
 	"Li ",        // 0x02

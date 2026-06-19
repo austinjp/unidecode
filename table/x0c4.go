@@ -1,6 +1,6 @@
 package table
 
-var x0c4 = []string{
+var x0c4 = [256]string{
 	"sswals",  // 0x00
 	"sswalt",  // 0x01
 	"sswalp",  // 0x02

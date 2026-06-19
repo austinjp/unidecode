@@ -1,6 +1,6 @@
 package table
 
-var x0fa = []string{
+var x0fa = [256]string{
 	"Chey ",  // 0x00
 	"Thak ",  // 0x01
 	"Thak ",  // 0x02
@@ -256,4 +256,5 @@ var x0fa = []string{
 	"",       // 0xfc
 	"",       // 0xfd
 	"",       // 0xfe
+	"",
 }

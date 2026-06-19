@@ -1,6 +1,6 @@
 package table
 
-var x00f = []string{
+var x00f = [256]string{
 	"AUM",     // 0x00
 	"",        // 0x01
 	"",        // 0x02
@@ -256,4 +256,5 @@ var x00f = []string{
 	"",        // 0xfc
 	"",        // 0xfd
 	"",        // 0xfe
+	"",
 }

@@ -1,6 +1,6 @@
 package table
 
-var x0a4 = []string{
+var x0a4 = [256]string{
 	"qiet",  // 0x00
 	"qiex",  // 0x01
 	"qie",   // 0x02
@@ -256,4 +256,5 @@ var x0a4 = []string{
 	"",      // 0xfc
 	"",      // 0xfd
 	"",      // 0xfe
+	"",
 }

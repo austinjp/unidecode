@@ -1,6 +1,6 @@
 package table
 
-var x0cd = []string{
+var x0cd = [256]string{
 	"cyess",  // 0x00
 	"cyeng",  // 0x01
 	"cyej",   // 0x02

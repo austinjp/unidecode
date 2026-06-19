@@ -1,6 +1,6 @@
 package table
 
-var x0d3 = []string{
+var x0d3 = [256]string{
 	"tim",    // 0x00
 	"tib",    // 0x01
 	"tibs",   // 0x02

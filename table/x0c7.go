@@ -1,6 +1,6 @@
 package table
 
-var x0c7 = []string{
+var x0c7 = [256]string{
 	"wek",    // 0x00
 	"wet",    // 0x01
 	"wep",    // 0x02

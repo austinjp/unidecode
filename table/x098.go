@@ -1,6 +1,6 @@
 package table
 
-var x098 = []string{
+var x098 = [256]string{
 	"Hu ",     // 0x00
 	"Ye ",     // 0x01
 	"Ding ",   // 0x02

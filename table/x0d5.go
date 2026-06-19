@@ -1,6 +1,6 @@
 package table
 
-var x0d5 = []string{
+var x0d5 = [256]string{
 	"pyuk",   // 0x00
 	"pyut",   // 0x01
 	"pyup",   // 0x02

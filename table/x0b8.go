@@ -1,6 +1,6 @@
 package table
 
-var x0b8 = []string{
+var x0b8 = [256]string{
 	"reoss",  // 0x00
 	"reong",  // 0x01
 	"reoj",   // 0x02

@@ -1,6 +1,6 @@
 package table
 
-var x0d2 = []string{
+var x0d2 = [256]string{
 	"toels",  // 0x00
 	"toelt",  // 0x01
 	"toelp",  // 0x02

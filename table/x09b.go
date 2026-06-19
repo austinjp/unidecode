@@ -1,6 +1,6 @@
 package table
 
-var x09b = []string{
+var x09b = [256]string{
 	"Ti ",        // 0x00
 	"Li ",        // 0x01
 	"Bin ",       // 0x02

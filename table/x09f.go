@@ -1,6 +1,6 @@
 package table
 
-var x09f = []string{
+var x09f = [256]string{
 	"Cu ",    // 0x00
 	"Qu ",    // 0x01
 	"Chao ",  // 0x02
@@ -256,4 +256,5 @@ var x09f = []string{
 	"",       // 0xfc
 	"",       // 0xfd
 	"",       // 0xfe
+	"",
 }

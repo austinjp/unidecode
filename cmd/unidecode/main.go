@@ -3,12 +3,12 @@ package main
 import (
 	"flag"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"os"
 	"strings"
 
+	"github.com/austinjp/unidecode"
 	"github.com/mattn/go-isatty"
-	"github.com/mozillazg/go-unidecode"
 )
 
 func main() {
@@ -23,7 +23,7 @@ func main() {
 	textSlice := flag.Args()
 	stdin := []byte{}
 	if !isatty.IsTerminal(os.Stdin.Fd()) {
-		stdin, _ = ioutil.ReadAll(os.Stdin)
+		stdin, _ = io.ReadAll(os.Stdin)
 	}
 	if len(stdin) > 0 {
 		textSlice = append(textSlice, string(stdin))
