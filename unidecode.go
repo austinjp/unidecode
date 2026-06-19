@@ -1,3 +1,4 @@
+// Package unidecode provide ASCII transliterations of Unicode text
 package unidecode
 
 import (
@@ -6,18 +7,14 @@ import (
 	"github.com/austinjp/unidecode/table"
 )
 
-// Version return version
+// Version returns version string
 func Version() string {
 	return "0.2.1"
 }
 
-// Unidecode implements transliterate Unicode text into plain 7-bit ASCII.
+// Unidecode transliterates Unicode text into plain 7-bit ASCII.
 // e.g. Unidecode("kožušček") => "kozuscek"
 func Unidecode(s string) string {
-	return unidecode(s)
-}
-
-func unidecode(s string) string {
 	var ret strings.Builder
 	ret.Grow(len(s)) // most chars map 1:1 or shrink, avoids reallocation
 	for _, c := range s {
